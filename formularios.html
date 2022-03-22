@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CDN Content Delivery Network -->
+  <!--  CSS Frontend-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!--  Rutinas JavaScript  Frontend-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<style type="text/css">
+.navbar-inverse {
+    background-color: #315692;
+    border-color: #080808;
+}
+.navbar-inverse .navbar-brand {
+    color: #f9f3f3;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffffff;
+}
+
+</style>
+
+</head>
+<body> <!-- El navbar por lo general se encuentra en la parte superior de una pagina y se inserta
+inmediatamente del body-->
+<!-- TIPOS DE NABVAR .navbar-default  .navbar-inverse .navbar-fixed-top-->
+<nav class="navbar navbar-inverse ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <!-- -<a class="navbar-brand" href="#"><img src="https://image.shutterstock.com/image-vector/logo-college-academy-university-school-260nw-418225237.jpg"
+        style="width: 30% !important;">
+    </a> -->
+    <a class="navbar-brand" href="navbar.html">ITS Hopelchen</a>
+    <!-- Region de la marca o la identidad del sitio y por lo general debe apuntar al archivo index es el archivo principal  -->
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="Galeria_imagenes.html">Galeria de Imagenes</a></li>
+      <li><a href="tablas.html">Demostración de tablas</a></li>
+      <li><a href="imagenes.html">Demostración de imagenes</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Otras opciones
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Opción 1</a></li>
+          <li><a href="#">Opción 2</a></li>
+          <li><a href="#">Opción 3</a></li>
+        </ul>
+      </li>
+    </ul>
+    <button class="btn btn-danger navbar-btn">Examenes Extraordinarios</button>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <p>Tipos de formularios </p> 
+</div>
+  
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2>Formulario 1 elementos separados (Default) </h2>
+
+            <form action="action_page.php">
+                <div class="form-group">
+                  <label for="email">Email address:</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Password:</label>
+                  <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox"> Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+    
+        </div>  
+
+
+        <div class="col-sm-12">
+
+        </br>
+    </br>
+    </br>
+    <h2>Formulario 2 Inline vertical  </h2>
+
+            <form class="form-inline" action="action_page.php">
+                <div class="form-group">
+                  <label for="email">Email address:</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Password:</label>
+                  <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox"> Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+        </div>
+
+        <div class="col-sm-12">
+        </br></br></br></br>
+        <h2>Formulario 1 Horizontal  </h2>
+            <form class="form-horizontal" action="/action_page.php">
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="email">Email:</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="pwd">Password:</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                  <label><input type="checkbox"> Remember me</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Submit</button>
+              </div>
+            </div>
+          </form></div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
